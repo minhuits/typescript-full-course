@@ -11,9 +11,24 @@
 # tsconfig.json 파일 설정
 ```json
 {
-  ...,
-  "experimentalDecorators": true,
-  "emitDecoratorMetadata": true,
-  ...,
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2020",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleDetection": "force",
+
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+
+    /* Completeness */
+    "skipLibCheck": true
+  }
 }
 ```
